@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Data Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #chart-container {
+        max-width: 800px;
+        margin: auto;
+      }
+      #controls {
+        margin: 20px;
+      }
+      .checkbox-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .checkbox-group label {
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Device Data Graph</h1>
+
+    <!-- Controls for toggling lines -->
+    <div id="controls">
+      <div class="checkbox-group" id="checkboxes"></div>
+    </div>
+
+    <!-- The chart will be rendered inside this canvas element -->
+    <div id="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
